@@ -1,0 +1,329 @@
+/* =====================
+   RESET & VARIABLES
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-main: #030d21;
+    --primary: #4A90E2;
+    --primary-dark: #2563eb;
+    --text-main: #ffffff;
+    --text-muted: #a0aec0;
+}
+
+/* =====================
+   GLOBAL
+===================== */
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1.2;
+}
+
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 35px;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.cta-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--primary-dark);
+    color: #fff;
+}
+
+.btn-outline {
+    border: 1px solid #2d3748;
+    color: #cbd5e0;
+}
+
+/* =====================
+   SOCIAL
+===================== */
+.social-links {
+    display: flex;
+    gap: 25px;
+    font-size: 1.4rem;
+}
+
+.social-links a {
+    color: var(--text-muted);
+}
+
+/* =====================
+   HERO IMAGE
+===================== */
+.hero-image {
+    flex: 0.8;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+/* =====================
+   CONTAINER
+===================== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.subtitle-centered {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+/* =====================
+   ABOUT SECTION
+===================== */
+.about-modern {
+    padding: 120px 0;
+}
+
+.about-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 80px;
+}
+
+.about-heading h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-heading p {
+    color: var(--text-muted);
+}
+
+/* =====================
+   ABOUT CARDS (FIXED 3 COLUMNS)
+===================== */
+.about-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-card {
+    width: 300px;
+}
+
+
+
+.about-card {
+    background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 40px 35px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary);
+}
+
+.about-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(74,144,226,0.15);
+    color: var(--primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+}
+
+.about-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: var(--text-muted);
+}
+
+/* LINK ONLY — NO LAYOUT EFFECT */
+.card-link {
+    display: contents;
+}
+
+/* =====================
+   EDUCATION
+===================== */
+.about-education {
+    margin-top: 60px;
+    padding: 45px 50px;
+    border-radius: 22px;
+    background: rgba(255,255,255,0.05);
+}
+
+.about-education h3 {
+    margin-bottom: 25px;
+}
+
+.about-education ul {
+    list-style: none;
+}
+
+.about-education li {
+    margin-bottom: 18px;
+    color: var(--text-muted);
+}
+
+.about-education strong {
+    color: var(--primary);
+}
+
+/* =====================
+   PROJECTS
+===================== */
+.project-section {
+    padding: 100px 0;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 420px);
+    gap: 40px;
+    justify-content: center;
+}
+
+.project-card-modern {
+    background: rgba(255,255,255,0.05);
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.project-media {
+    position: relative;
+    aspect-ratio: 16 / 10;
+}
+
+.project-media img,
+.project-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #3b82f6;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.project-content {
+    padding: 26px 28px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    background: rgba(59,130,246,0.15);
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.project-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+/* =====================
+   RESPONSIVE (HANYA HERO & PROJECT)
+===================== */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
