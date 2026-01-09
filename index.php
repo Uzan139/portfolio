@@ -3,14 +3,14 @@
    DATA PROFILE
 ===================== */
 $profile = [
-    "nama" => "Fauzan",
+    "nama" => "Hilman",
     "role" => "Mahasiswa Rekayasa Perangkat Lunak",
     "univ" => "Universitas Pendidikan Indonesia (UPI)",
-    "email" => "uzanardi139@upi.edu",
+    "email" => "ahmadhilman19@upi.edu",
     "sosial" => [
-        "github" => "https://github.com/username_kamu",
+        "github" => "https://github.com/jauh.disini",
         "linkedin" => "https://linkedin.com/in/username_kamu",
-        "instagram" => "https://instagram.com/uzanardi_"
+        "instagram" => "https://instagram.com/alhfizh_"
     ]
 ];
 
